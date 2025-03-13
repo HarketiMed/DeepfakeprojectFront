@@ -1,0 +1,344 @@
+/* General Styles */
+.home {
+    font-family: Arial, sans-serif;
+    color: #333;
+  }
+  
+  /* Hero Section */
+  .hero-section {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 4rem 2rem;
+    height: 80vh; /* Full viewport height */
+    background-image: url('C:\Users\ASUS\Desktop\firstproject\webapp\front-end\public\deepfake.png'); /* Add your image path here */
+    background-size: cover; /* Cover the entire section */
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Prevent repeating */
+    overflow: hidden;
+  }
+  /* Logo Styling */
+.feature-logo {
+  width: 80px; /* Adjust size as needed */
+  height: 80px; /* Adjust size as needed */
+  object-fit: contain; /* Ensures the image fits within the dimensions */
+  margin-bottom: 15px; /* Space between logo and text */
+}
+
+/* Feature Card Styling */
+.feature-card, .feature {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 20px;
+  border: 1px solid #e0e0e0; /* Optional: Add a border for better visual separation */
+  border-radius: 10px; /* Optional: Rounded corners */
+  background-color: #f9f9f9; /* Optional: Light background color */
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Optional: Add hover effect */
+}
+
+.feature-card:hover, .feature:hover {
+  transform: translateY(-5px); /* Optional: Slight lift on hover */
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); /* Optional: Shadow on hover */
+}
+
+/* Grid Layout for Features */
+.features-grid, .detection-features {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Responsive grid */
+  gap: 20px; /* Space between cards */
+  margin-top: 30px;
+}
+
+/* Section Styling */
+.detection-section, .features-section {
+  padding: 40px 20px;
+  text-align: center;
+}
+
+/* Heading Styling */
+.detection-section h2, .features-section h2 {
+  margin-bottom: 20px;
+  font-size: 2rem;
+  color: #333;
+}
+
+/* Paragraph Styling */
+.detection-section p, .features-section p {
+  font-size: 1rem;
+  color: #666;
+  max-width: 800px;
+  margin: 0 auto 30px;
+}
+  
+  .hero-content {
+    max-width: 50%;
+    margin-left: 2px;
+  }
+  
+  .hero-content h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    color: #00bcd4;
+  }
+  
+  .hero-content p {
+    font-size: 1.25rem;
+    margin-bottom: 2rem;
+    color: #ffffff;
+  }
+  
+  .cta-button {
+    padding: 0.75rem 1.5rem;
+    background-color: #00bcd4;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 1rem;
+    cursor: pointer;
+    border-radius: 25px;
+  }
+  
+  .cta-button:hover {
+    background-color: #0097a7;
+  }
+  
+  .hero-image img {
+    max-width: 100%;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Features Section */
+  .features-section {
+    padding: 4rem 2rem;
+    text-align: center;
+    background-color: white;
+  }
+  
+  .features-section h2 {
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+    color: #00bcd4;
+  }
+  
+  .features-grid {
+    display: flex;
+    justify-content: space-around;
+    gap: 2rem;
+  }
+  
+  .feature-card {
+    background-color: #f9f9f9;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    max-width: 300px;
+    text-align: center;
+  }
+  
+  .feature-card h3 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    color: #333;
+  }
+  
+  .feature-card p {
+    font-size: 1rem;
+    color: #555;
+  }
+  
+  /* Call-to-Action Section */
+  .cta-section {
+    padding: 4rem 2rem;
+    text-align: center;
+    background-color: #00bcd4;
+    color: white;
+  }
+  
+  .cta-section h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+  }
+  
+  .cta-section p {
+    font-size: 1.25rem;
+    margin-bottom: 2rem;
+  }
+  
+  .cta-section .cta-button {
+    background-color: white;
+    color: #00bcd4;
+    border: 2px solid #00bcd4;
+  }
+  
+  .cta-section .cta-button:hover {
+    background-color: #00bcd4;
+    color: white;
+  }
+  /* Deepfake Detection Section */
+.detection-section {
+    padding: 4rem 2rem;
+    background-color: #f9f9f9;
+    text-align: center;
+  }
+  
+  .detection-content {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .detection-content h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    color: #00bcd4;
+  }
+  
+  .detection-content p {
+    font-size: 1.25rem;
+    margin-bottom: 2rem;
+    color: #555;
+  }
+  
+  .detection-features {
+    display: flex;
+    justify-content: space-around;
+    gap: 2rem;
+    margin-bottom: 2rem;
+  }
+  
+  .detection-features .feature {
+    background-color: white;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    max-width: 300px;
+    text-align: center;
+  }
+  
+  .detection-features .feature h3 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    color: #333;
+  }
+  
+  .detection-features .feature p {
+    font-size: 1rem;
+    color: #555;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .detection-features {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .detection-features .feature {
+      max-width: 100%;
+    }
+    .detection-section {
+        background: linear-gradient(to bottom, #f9f9f9, #e0e0e0);
+      }
+      
+  }
+  /* Dangers of Deepfakes Section */
+.dangers-section {
+    padding: 4rem 2rem;
+    background-color: #000000;
+    text-align: center;
+  }
+  
+  .dangers-content {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .dangers-content h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    color: #ffffff; /* Red color for emphasis */
+  }
+  
+  .dangers-content p {
+    font-size: 1.25rem;
+    margin-bottom: 2rem;
+    color: #ffffff;
+  }
+  
+  .dangers-grid {
+    display: flex;
+    justify-content: space-around;
+    gap: 2rem;
+    margin-bottom: 2rem;
+  }
+  
+  .dangers-grid .danger-card {
+    background-color: #f9f9f9;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    max-width: 300px;
+    text-align: center;
+  }
+  
+  .dangers-grid .danger-card h3 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    color: #333;
+  }
+  
+  .dangers-grid .danger-card p {
+    font-size: 1rem;
+    color: #555;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .dangers-grid {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .dangers-grid .danger-card {
+      max-width: 100%;
+    }
+  }
+  /* Quote Section */
+.quote-section {
+    padding: 4rem 2rem;
+    background-color: #ffffff; /* Light gray background */
+    text-align: center;
+  }
+  
+  .quote-content {
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  
+  .quote-content blockquote {
+    font-size: 2rem;
+    font-style: italic;
+    color: #333;
+    margin-bottom: 1rem;
+    line-height: 1.5;
+  }
+  
+  .quote-content .quote-author {
+    font-size: 1.25rem;
+    font-weight: bold;
+    color: #555;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .quote-content blockquote {
+      font-size: 1.5rem;
+    }
+  
+    .quote-content .quote-author {
+      font-size: 1rem;
+    }
+  }
