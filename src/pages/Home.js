@@ -34,7 +34,8 @@ function Home() {
             animate={{ opacity: 1, x: 0 }} // Animate to visible and original position
             transition={{ duration: 1, delay: 1.5 }} // Animation duration and delay
           >
-            Revolutionizing AI-generated content with cutting-edge technology.
+            Enhancing Deepfake Detection Systems through AI-Driven Models and
+            Scalable Architecture
           </motion.p>
           <motion.div
             initial={{ opacity: 0, y: 50 }} // Initial state (hidden and slightly below)

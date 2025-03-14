@@ -111,14 +111,17 @@ const Dashboard = () => {
                   <ImageIcon sx={{ color: '#2196F3' }} /> {/* Blue icon */}
                 </ListItemIcon>
                 <ListItemButton onClick={() => navigate('/clientImagePrediction')}>
-        <ListItemText primary="Image Prediction" />
-      </ListItemButton>
+              <ListItemText primary="Image Prediction" />
+                </ListItemButton>
               </ListItem>
               <ListItem button>
                 <ListItemIcon>
                   <VideocamIcon sx={{ color: '#2196F3' }} /> {/* Blue icon */}
                 </ListItemIcon>
-                <ListItemText primary="Video Prediction" />
+                <ListItemButton onClick={() => navigate('/clientVideoPrediction')}>
+              <ListItemText primary="Video Prediction" />
+                </ListItemButton>
+                
               </ListItem>
             </List>
             <Divider />

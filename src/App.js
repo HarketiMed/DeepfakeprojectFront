@@ -12,6 +12,7 @@ import { CircularProgress } from '@mui/material'; // For a loading spinner
 import RegistrationForm from './pages/Clientpages/clientRegister'
 import BusinessForm from './pages/Businesspages/BusinessRegister'
 import ImagePrediction from './pages/Clientpages/clientImagePredicition'
+import DeepFakePrediction from './pages/Clientpages/clientVideoPrediction'
 function App() {
   const [isLoading, setIsLoading] = useState(true); // Loading state
 
@@ -65,6 +66,7 @@ function App() {
           <Route path="/register/client" element={<RegistrationForm  />} />
           <Route path="/register/business" element={<BusinessForm  />} />
           <Route path="/clientImagePrediction" element={<ImagePrediction  />} />
+          <Route path="/clientVideoPrediction" element={<DeepFakePrediction  />} />
         </Routes>
         
       </div>

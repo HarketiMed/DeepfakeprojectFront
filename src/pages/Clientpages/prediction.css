@@ -133,3 +133,143 @@
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   object-fit: contain; /* Ensure the image maintains its aspect ratio */
 }
+
+.deepfake-container {
+  background: #030303;
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  max-width: 800px;
+  width: 100%;
+  text-align: center;
+}
+
+h1 {
+  font-size: 2rem;
+  color: #ffffff;
+  margin-bottom: 1rem;
+}
+
+.description {
+  font-size: 1rem;
+  color: #ffffff;
+  margin-bottom: 2rem;
+}
+
+.upload-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+.file-input {
+  display: none; /* Hide the file input */
+}
+
+.upload-button,
+.submit-button {
+  padding: 0.75rem 1.5rem;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background-color 0.3s ease;
+}
+
+.upload-button:hover,
+.submit-button:hover:not(:disabled) {
+  background-color: #0056b3;
+}
+
+.submit-button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+.file-preview {
+  margin-top: 2rem;
+}
+
+.preview-video {
+  max-width: 100%;
+  border-radius: 5px;
+  margin-top: 1rem;
+}
+
+.frame-delay-input {
+  margin-top: 1rem;
+}
+
+.frame-delay-input label {
+  font-size: 1rem;
+  color: #ffffff;
+}
+
+.frame-delay-input input {
+  padding: 0.5rem;
+  border: 2px solid #ddd;
+  border-radius: 5px;
+  margin-left: 0.5rem;
+  width: 100px;
+}
+
+.frames-preview {
+  margin-top: 2rem;
+}
+
+.frames-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.frame-image {
+  width: 100%;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.prediction-result {
+  margin-top: 2rem;
+}
+
+.result {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-top: 1rem;
+}
+
+.fake-text {
+  color: #ff4d4d;
+}
+
+.real-text {
+  color: #4caf50;
+}
+
+.report-section {
+  margin-top: 2rem;
+  text-align: left;
+  background: #f9f9f9;
+  padding: 1rem;
+  border-radius: 5px;
+  border: 1px solid #ddd;
+}
+
+.report-details {
+  margin-top: 1rem;
+}
+
+.report-details p {
+  margin: 0.5rem 0;
+  font-size: 1rem;
+  color: #000000;
+}
+
+.report-details strong {
+  color: #ff0000;
+}
